@@ -13,8 +13,6 @@ font-family: "Roboto", sans-serif;
 font-size: 14px;
 line-height: 1.14;
 color: #212121;
-/* background-image: url(./images/studio.jpg);
-background-size: cover; */
 }
 
 h1, 
@@ -87,6 +85,10 @@ img {
 /*Стилы для index.html*/
 
 /*--------------------header--------------------*/
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .heder-box {
     display: flex;
@@ -149,23 +151,17 @@ img {
     margin-bottom: 32px;
 }
 
-.current {
-    color: var(--brand-color);
-}
-
 /*------------------hero--------------------*/
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-transform:uppercase;
     color: var(--brand-color-three);
     background-color: #2F303A;
 }
 
 .hero-box {
-    /* width: 700px; */
-    text-align: center; 
+    width: 700px;
+    text-align: center;
 }
 
 .headline {
@@ -174,10 +170,9 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    min-width: 696px;
+    margin-top: 200px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
     }
 
 .cursor {
@@ -193,6 +188,7 @@ img {
     margin: 0 auto;
     border-radius: 4px;
     border: none;
+    margin-bottom: 200px;
 }
 
 /*---------------features-----------*/
@@ -250,7 +246,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .jop-list-item-box {
-    padding-top: 30px;
+    margin-top: 30px;
 
 }
 
@@ -349,16 +345,16 @@ border: none;
 
 .aside-list-items {
     border: 1px solid #EEEEEE;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
 }
 
 .caption {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-top: 20px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .desc {
@@ -366,7 +362,9 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.875;
 color: var(--brand-tekst-color);
-
+margin-right: 24px;
+margin-bottom: 20px;
+margin-left: 24px;
 }
 
 
