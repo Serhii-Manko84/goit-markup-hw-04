@@ -78,17 +78,13 @@ img {
     border: 0;
     clip: rect(0 0 0 0);
   }
-
+.nav-link.active {color: var(--brand-color);}
     /* outline-style: auto; */
 
 
 /*Стилы для index.html*/
 
 /*--------------------header--------------------*/
-.header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .heder-box {
     display: flex;
@@ -132,7 +128,7 @@ img {
     color: var(--brand-color-two);
     }
 
-.nav-link-contakts {
+.nav-link-contacts {
     color: var(--brand-tekst-color);
     text-decoration: none;
 }
@@ -140,16 +136,26 @@ img {
 .nav-link:focus, .nav-link:hover {
     color: var(--brand-color)}
 
-.nav-link-contakts:focus, .nav-link-contakts:hover {
+.nav-link-contacts:focus, .nav-link-contacts:hover {
         color: var(--brand-color);
     }
     
 .contact {
     display: flex;
-    column-gap: 50px;
+    gap: 30px;
     margin-top: 32px;
     margin-bottom: 32px;
 }
+
+.navigation-social-icon, {
+    fill: var(--brand-tekst-color);
+    text-align: center; 
+}
+
+.social-icon:hover {fill: var(--brand-color);}
+
+.social-icon:focus {fill: var(--brand-color);}
+
 
 /*------------------hero--------------------*/
 
@@ -157,11 +163,14 @@ img {
     text-transform:uppercase;
     color: var(--brand-color-three);
     background-color: #2F303A;
+    background-image: linear-gradient(rgba(35, 35, 41, 0.6), rgba(47, 48, 58, 0.4)), url(/images/studio.jpg);
 }
 
 .hero-box {
     width: 700px;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .headline {
@@ -171,7 +180,6 @@ img {
     font-size: 44px;
     line-height: 1.36;
     min-width: 696px;
-    margin-top: 200px;
     margin-bottom: 30px;
     }
 
@@ -188,12 +196,30 @@ img {
     margin: 0 auto;
     border-radius: 4px;
     border: none;
-    margin-bottom: 200px;
 }
 
 /*---------------features-----------*/
 
-  .features-section-list {
+.features-section-link {   
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+    column-gap: 30px;
+    flex-wrap: nowrap;
+}
+    
+    .features-section-icon {
+        display: flex;
+        width: 270px;
+        min-height: 120px;
+        justify-content: center;
+        align-items: center;
+        background: #F5F4FA;
+        border-radius: 4px;
+        border: #F5F4FA;
+        margin-bottom: 30px;
+    } 
+
+.features-section-list {
     display: flex;
     column-gap: 30px;
     flex-wrap: nowrap;
@@ -238,7 +264,58 @@ img {
     gap: 30px;
     flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 4);
+    
 }
+
+
+.job-items {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+.job-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    gap: 10px;
+} 
+
+.job-item-social-icon {
+    fill: var(--brand-tekst-color);
+}
+
+.job-social-icon:hover,
+.job-social-icon:focus {
+    background-color: var(--brand-color);
+}
+
+
+.job-social-icon:hover .job-item-social-icon,
+.job-social-icon:focus .job-item-social-icon {
+    fill: var(--brand-color-three);
+}
+    
+
+
+.features-section-icon {
+
+}
+
+
+justify-content: center;
+align-items: center;
+
+
+
+
+
+
 
 .jop-list-item {
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -246,7 +323,10 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .jop-list-item-box {
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
 
 }
 
@@ -254,15 +334,15 @@ border-radius: 0px 0px 4px 4px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
+    margin-bottom: 10px;
+    
 }
 
 .job-titl {
     line-height: 1.71;
     color: var(--brand-tekst-color);
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+    
 }
 
 /*--------------------------Футер--------------------*/
@@ -345,16 +425,13 @@ border: none;
 
 .aside-list-items {
     border: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 
 .caption {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    margin-top: 20px;
-    margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px;
 }
 
 .desc {
@@ -362,9 +439,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.875;
 color: var(--brand-tekst-color);
-margin-right: 24px;
-margin-bottom: 20px;
-margin-left: 24px;
+
 }
 
 
