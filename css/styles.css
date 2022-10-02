@@ -264,7 +264,6 @@ img {
     gap: 30px;
     flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 4);
-    
 }
 
 
@@ -273,7 +272,6 @@ img {
     justify-content: center;
     column-gap: 10px;
 }
-
 
 .job-social-icon {
     display: flex;
@@ -300,35 +298,24 @@ img {
 .job-social-icon:focus .job-item-social-icon {
     fill: var(--brand-color-three);
 }
-    
-
-
-.features-section-icon {
-
-}
-
-
-justify-content: center;
-align-items: center;
-
-
-
-
-
-
 
 .jop-list-item {
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
+.jop-list-item:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 016), 0px 1px 1px rgba(0, 0, 0, 0.16), 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 4px 4px;
+    }
+
+
 .jop-list-item-box {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    
-
 }
+
 
 .job-name {
     font-weight: 700;
@@ -342,16 +329,61 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.71;
     color: var(--brand-tekst-color);
     margin-bottom: 16px;
-    
 }
 
-/*--------------------------Футер--------------------*/
+/*=====================client====================*/
+
+
+.client-item {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+
+}
+
+.client-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    background-color: #FFFFFF;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.link-social-icon {
+    fill: #AFB1B8;
+}
+
+.client-social-icon:hover,
+.client-social-icon:focus {
+    border: 1px solid var(--brand-color);
+}
+
+.client-social-icon:hover .link-social-icon,
+.client-social-icon:focus .link-social-icon {
+    fill: var(--brand-color);
+}
+
+/*=============================Футер=============*/
+
 
 .footer {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
     }
+
+.footer-logo-address {
+
+   
+}
 
 .footer-address {
     font-style: normal;
@@ -380,12 +412,61 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .nav-link-adres:focus, 
-.nav-link-adres:hover {color: var(--brand-color);}
+.nav-link-adres:hover {
+    color: var(--brand-color);
+}
 
 .nav-link-kont:focus, 
-.nav-link-kont:hover {color: var(--brand-color);}
+.nav-link-kont:hover {
+    color: var(--brand-color);
+}
 
-/*-------------------Стилі для портфоліє---------------*/
+.social { 
+    padding-left: 70px;
+
+
+    
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+.name-social {
+    display: flex;
+    font-weight: 700;    
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.social-items-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    gap: 10px;
+}
+
+.social-items-icon-link-list {
+    fill: var(--brand-color-three);
+}
+
+.social-items-icon-link:hover,
+.social-items-icon-link:focus {
+    background-color: var(--brand-color);
+}
+
+
+
+/*================Стилі для портфоліє=================*/
 
 
 .order-list {
@@ -415,12 +496,21 @@ border: none;
     background-color: var(--brand-color);
 }
 
-
 .aside {
     display: flex;
-    gap: 30px;
+    gap: 26px;
     flex-wrap: wrap;
     flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.aside-list {
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+}
+
+.aside-list:hover, 
+.aside-list:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .aside-list-items {
@@ -441,7 +531,6 @@ line-height: 1.875;
 color: var(--brand-tekst-color);
 
 }
-
 
 .accent-three {
     font-family: var(--brand-font);
