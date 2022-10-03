@@ -136,6 +136,7 @@ img {
 
 
 .nav-link-contacts {
+    display: flex;
     color: var(--brand-tekst-color);
     text-decoration: none;
     fill: var(--brand-tekst-color);
