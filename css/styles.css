@@ -304,11 +304,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 border-radius: 0px 0px 4px 4px;
 }
 
-.jop-list-item:hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 016), 0px 1px 1px rgba(0, 0, 0, 0.16), 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 0px 0px 4px 4px;
-    }
-
 
 .jop-list-item-box {
     padding-top: 30px;
@@ -338,7 +333,6 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     justify-content: center;
     column-gap: 30px;
-
 
 }
 
